@@ -1,69 +1,46 @@
-<?php
-/**
- * The template for home
- */
-get_header(); ?>
-
-		<div id="container" class="home-page">
-			<div id="content" role="main">
-			
-<div id="profile">
-<div id="photo">
-<img src="<?php echo custom_get_template_url() ?>/images/lovelife.jpg" alt="" />
-</div>   
-<div id="info">                      
-<?php
-$args=array(
-   'post_type'=>'info',
-   'name' => 'okazaki-ritsuko'
-);
-$the_query = new WP_Query($args);     
-?>
- 
-<?php if ($the_query->have_posts()) : $the_query->the_post();   ?>    
-<div id="info-title"><?php the_title(); ?></div>
-<div id="info-content"><?php the_content(); ?> </div>             
-<?php endif; ?>
-</div>
-</div>			
-            
-<div id="welcome">
-<?php
-$args=array(
-   'post_type'=>'info',
-   'name' => 'home'
-);
-$the_query = new WP_Query($args);
-if ($the_query->have_posts()) : $the_query->the_post(); 
-		 the_content();
-endif; ?>
-</div><!--#welcome-->
-
-<?php 
-$args=array(
-   'post_type'=>array('post','song'),
-   'posts_per_page' => 5,
-   'orderby' => 'modified'
-);
-query_posts($args); 
-?>	
-<div id="news">
-<h4><?php _e("lastest news","forritz")?></h4>
-<ul>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<li id="post-<?php the_ID(); ?>">
-					<span class="date"><?php the_modified_date(); ?></span>
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li><!-- #post-## -->
-<?php endwhile; ?>
-</ul> 
-</div><!--#news-->      
-
-			</div><!-- #content -->
-		</div><!-- #container -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
-   
-		
-		
+<?php
+/**
+ * 
+ */
+
+get_header(); ?>
+
+<section class="span3">
+	<div id="profile" class='thumbnail '>
+		<div class="photo text-center">
+			<?php
+			printf('<img width="180" height="237" alt="" src="%s/img/steps.jpg"/>',get_template_directory_uri());
+			?>
+		</div>   
+		<div class="info">  
+			<h4><?php _e('Okazaki Ritsuko','forritz');?></h4>
+			<hr/>
+			<?php forritz_content_quote('okazaki-ritsuko','info');?> 
+		</div>                 
+	</div>
+</section>
+<section class="span9">
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="row">
+		<?php forritz_content_quote('home','info');?>
+	</div>
+	<hr/>
+	<div class="row">
+		<h4><?php _e('Discography','forritz');?></h4>
+		<?php
+		$record_names = 
+		array("sincerely-yours","joyful-calendar","a-happy-life",
+			"ritzberry-fields","rain-or-shine","ohayou",
+			"lovehina-okazaki-collection","life-is-lovely",
+			"forritz","love-and-life","for-fruit-basket",
+			"morning-grace","melodic-hard-cure");
+		forritz_record_img_list($record_names,array(80,80));
+		?>
+		<?php 
+		$link = forritz_get_post_link('discography','page');
+		printf('<a class="btn" href="%s">%s</a>',$link,__('Learn more »','forritz'));
+		?>
+	</div>
+</section>
+
+<?php get_footer(); ?>

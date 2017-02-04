@@ -1,55 +1,26 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the id=main div and all content
- * after.  Calls sidebar-footer.php for bottom widgets.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
-?>
-	</div><!-- #main -->
-
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
-
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
-			
-			<div id="site-info">
-                Copyright &copy; 2007-2010 
-				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-                All rights reserved. 
-			</div><!-- #site-info -->
-
-			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>       
-				<a href="<?php echo esc_url( __('http://wordpress.org/', 'twentyten') ); ?>"
-						title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'twentyten'); ?>" rel="generator">
-					<?php print( 'Powered by WordPress' ); ?>
-				</a>
-			</div><!-- #site-generator -->
-			
-		</div><!-- #colophon -->
-	</div><!-- #footer -->
-
-</div><!-- #wrapper -->
-
-<?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
-
-	wp_footer();
-?>
-</body>
-</html>
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains footer content and the closing of the
+ * #main and #page div elements.
+ *
+ * @package ForRITZ
+ * @subpackage Two
+ * @since ForRITZ Theme 1.0
+ */
+?>
+		</div><!-- .row-fluid -->
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+			Copyright © 2006-2013 
+			<a href="http://forritz.com/" title="For RITZ" rel="home">For RITZ</a>
+			All rights reserved. 
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+</body>
+</html>

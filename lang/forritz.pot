@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: forritz\n"
+"POT-Creation-Date: 2010-07-25 16:20+0800\n"
+"PO-Revision-Date: 2010-07-25 16:26+0800\n"
+"Last-Translator: kiminozo <kiminozoeien@Gmail.com>\n"
+"Language-Team: kiminozo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+
+msgid "hello"
+msgstr ""
+
+
+msgid "lastest news"
+msgstr ""
+
+msgid "Songs"
+msgstr ""
+
+msgid "Song"
+msgstr ""
+
+msgid "Add New"
+msgstr ""
+
+msgid "Add New Song"
+msgstr ""
+
+msgid "Edit Song"
+msgstr ""
+
+msgid "New Song"
+msgstr ""
+
+msgid "View Song"
+msgstr ""
+
+msgid "Search Song"
+msgstr ""
+
+msgid "No songs found"
+msgstr ""
+
+msgid "No songs found in Trash"
+msgstr ""
+
+msgid "Discography"
+msgstr ""
+
+msgid "Song Writer"
+msgstr ""
+
+msgid "Lyric Writer"
+msgstr ""
+
+msgid "Arranger"
+msgstr ""
+
+msgid "Singer"
+msgstr ""
+
+msgid "Song Title"
+msgstr ""
+
+msgid "Notice:"
+msgstr ""
+
+msgid "Original"
+msgstr ""
+
+msgid "Translation"
+msgstr ""
+
+msgid "From album"
+msgstr ""
+
+msgid "translator"
+msgstr ""
+
+msgid "Records"
+msgstr ""
+
+msgid "Record"
+msgstr ""
+
+msgid "Add New Record"
+msgstr ""
+
+msgid "Edit Record"
+msgstr ""
+
+msgid "New Record"
+msgstr ""
+
+msgid "View Record"
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Add New Info"
+msgstr ""
+
+msgid "Edit Info"
+msgstr ""
+
+msgid "New Info"
+msgstr ""
+
+msgid "View Info"
+msgstr ""
+
+msgid "Post Options"
+msgstr ""
+
+msgid "Remarks:"
+msgstr ""
+
+msgid "No.:"
+msgstr ""
+
+msgid "Price:"
+msgstr ""
+
+msgid "Release Date:"
+msgstr ""
+
+msgid "Publisher:"
+msgstr ""
+
+msgid "Cover:"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Songs List"
+msgstr "" 
+
+msgid "Series"
+msgstr ""
+
+msgid "Other/Remarks"
+msgstr ""
+
+msgid "Artist:"
+msgstr ""
+
+msgid "Artist Profile"
+msgstr ""
+
+msgid "Record Type:"
+msgstr ""
+
+msgid "This website following the <a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\" rel=\"external nofollow\">Attribution-NonCommercial-ShareAlike 3.0</a>."
+msgstr ""
+
+msgid "This post is Original."
+msgstr ""
+
+msgid "For reproduced, please specify from <a href=\"%1$s\">%2$s</a>[<a href=\"%1$s\">%1$s</a>],the author is:%3$s."
+msgstr ""
+
+
+
+msgid "This post is Reproduced."
+msgstr ""
+
+msgid "Reproduced from  <a href=\"%1$s\">%2$s</a>[<a href=\"%1$s\">%1$s</a>],the author is:%3$s."
+msgstr ""
+
+msgid "Reproduced from [<a href=\"%1$s\">%1$s</a>],the author is:%2$s."
+msgstr ""
+
+msgid "This post is Translated."
+msgstr ""
+
+msgid "Reproduced from <a href=\"%1$s\">%2$s</a>[<a href=\"%1$s\">%1$s</a>],the author is:%3$s, and the translator is:%4$s."
+msgstr ""
+
+msgid "Reproduced from %s,the author is:%s, and the translator is:%s."
+msgstr ""
+
+msgid "The author is:%s, and the translator is:%s."
+msgstr ""
+
+msgid "The translator is:%s."
+msgstr ""
+
+msgid "Bookmark: <a href=\"%1$s\">%1$s</a>"
+msgstr ""
+
+msgid "License Options"
+msgstr ""
+
+msgid "original"
+msgstr ""
+
+msgid "reproduced"
+msgstr ""
+
+msgid "translated"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "License Type:"
+msgstr ""
+
+msgid "Author:"
+msgstr ""
+
+msgid "Translator:"
+msgstr ""
+
+msgid "Reproduced Website:"
+msgstr ""
+
+msgid "Reproduced Url:"
+msgstr ""
+
+msgid "Post List"
+msgstr ""
+
+msgid "Abstract:"
+msgstr ""
+
+msgid "<span>Categories:</span> %1$s <span>Tags:</span> %2$s"
+msgstr ""
+
+msgid "<span>Categories:</span> %1$s"
+msgstr ""
+
+msgid "Continue Reading"
+msgstr ""
+
+msgid "Romaji"
+msgstr ""
+
+msgid "Song Title Translation:"
+msgstr ""
+
+msgid "Previous post link"
+msgstr ""
+
+msgid "Next post link"
+msgstr ""
+
+msgid "Previous song link"
+msgstr ""
+
+msgid "Next song link"
+msgstr ""
+
+msgid "First page"
+msgstr ""
+
+msgid "Previous page"
+msgstr ""
+
+msgid "Next page"
+msgstr ""
+
+msgid "Last page"
+msgstr ""
+
+msgid "Okazaki Ritsuko"
+msgstr ""
+
+msgid "Learn more »"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "Posts"
+msgstr ""
+
+msgid "Lyric"
+msgstr ""
+
+msgid "Okazaki Ritsuko Wiki"
+msgstr ""

@@ -2,15 +2,12 @@
 /**
  * The page template file.
  */
-forritz_set_menu_posts();
+
 get_header(); ?>
 
 <section id="primary" class="span9 site-content">
 	<div id="content" role="main">
-		<h2 class="page-title page-header">
-			<? _e('Tag','forritz')?>
-			<small><?php echo single_cat_title( '', false );?></small>
-		</h2>
+		<h2 class="page-title page-header"><?php echo single_cat_title( '', false );?></h2>
 		<?php if($paged == 0):
 		$category_description = category_description();
 		if (! empty( $category_description ) ):?>
@@ -28,16 +25,22 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="loop-header">
-			<h4>
-				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'forritz' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h4>
-			
 		</header>
 		<div class="loop-excerpt">
-			<?php the_excerpt(); ?>
+			<div class="media">
+				<a class="pull-left" href="#">
+					<?php the_post_thumbnail(array(150,150),
+					array('class' => "media-object"));?>				
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">
+						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'forritz' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+					</h4>
+					<?php the_excerpt(); ?>
+				</div>
+			</div>
 		</div><!-- .entry-content -->
 		<footer class="loop-footer">
-			<?php forritz_tagsblock();?>
 		</footer>
 	</article><!-- #post -->
 <?php endwhile; ?>

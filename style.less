@@ -1,0 +1,433 @@
+﻿/*
+Theme Name: ForRITZ Theme
+Theme URI: http://forritz.com/
+Description: custom bootstrap Theme
+Version: 1.0
+Author: kiminozo
+Author URI: http://forritz.com/
+Tags: one, two
+----------------------------------------------------------------------------------*/
+
+//Commom
+@page-background:#F1F1F1;
+@background: #FFF;
+@text:#444;
+@sub-text:#777;
+@remark-text-color:#999;
+@entry-title:#000;
+@song-title-bk:#f5f5f5;
+//Header
+@logo:white url('img/logo.jpg') no-repeat left top;   
+
+//Functions
+.rounded-corners (@radius: 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+.rounded-corners-top (@radius: 5px) {
+	border-radius:@radius @radius 0 0;
+	-webkit-border-radius: @radius @radius 0 0;
+	-moz-border-radius: @radius @radius 0 0;
+}
+.title-font(@color: #444){
+	color: @color;
+	text-decoration: none;
+	outline: medium none currentColor;
+	//font-family: "Helvetica Neue", "Arial", "Helvetica", "Nimbus Sans L", "sans-serif";
+}
+.clear(){
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.hide(){
+
+}
+
+
+#site { 
+	padding: 20px 0;
+	position: relative;
+	background: @page-background;
+
+}
+
+//commod
+span.separator{
+	padding-left: 1px;
+	padding-right: 4px;
+}
+
+
+#page{
+	background:@background;
+	padding: 0 20px;
+	.rounded-corners(10px);
+}
+
+//Header
+#masthead.site-header {
+	margin: 10px 0 0;
+	background:@logo;
+
+	hgroup{
+		margin-left: 90px;
+	}
+	.site-title {
+		padding: 20px 0 0;
+		font-size: 30px;
+		line-height: 1;
+		margin-bottom: 0;
+		a{
+			color: @text;
+			text-decoration: none;
+			outline: medium none currentColor;
+		}
+	}
+	.site-description {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1;
+		color: @sub-text;
+	}
+	ul.nav{
+		padding-left:550px;
+	}
+}
+
+
+
+//footer
+#colophon
+{
+	margin: 50px 0 0;
+	padding: 10px 5px;
+	border-top: 1px solid #DDDDDD;
+
+	.site-info{
+		color: @sub-text;
+	}
+}
+
+
+@secondary-width:26%;
+//primary
+#primary{
+	//float:left;
+	//width: 100%-@secondary-width;
+	min-height: 600px;
+
+	.entry-header{
+		margin: 10px 0;
+	}
+
+	.entry-title { 
+		color: @entry-title;
+		//font-size: 21px;
+		font-weight: 700;
+		line-height: 1.3em;
+		margin-bottom: 0px;
+	}
+
+	.entry-content{
+		clear: both;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 12px 0px 0px;
+		line-height: 24px;
+	}
+
+	.entry-footer{
+		margin: 20px 0 10px;
+	}
+
+
+
+	//article
+	.tag-links{
+		.tag{
+			margin: 0 5px 0 0;
+			background-color: #3a87ad;
+
+			a{
+				padding: 2px 4px;
+				font-size: 12px;
+				//font-weight: bold;
+				line-height: 14px;
+				color: #fff;
+				text-shadow: none;
+				white-space: nowrap;
+				//vertical-align: baseline;
+				
+				&:hover{
+					text-decoration: none;	
+				}
+			}
+		}
+	}
+
+	//div.entry-content #nav
+	.entry-content #nav{
+		background: #f5f5f5;
+		border: 1px solid #e3e3e3;
+		float: right;
+		margin:0 0 12px 16px;
+		padding: 4px 8px;
+		max-width: 50%;
+		.rounded-corners(3px);
+
+		#nav-title{
+			font-weight:bold;
+			border-bottom:1px #e3e3e3 solid;
+			margin:0 0 5px;
+			min-width:20%;
+		}
+
+		ul{
+			list-style-type: none;
+			margin: 1px 0 1px 5px;
+			li{
+				line-height: 24px;
+			}
+		}
+	}
+
+//loop
+.loop-header{
+	margin-top: 20px;
+}
+.loop-footer{
+		//margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+//secondary
+#secondary{
+	//float: right;
+	//width: @secondary-width;
+	.widget{
+		margin: 5px 0;
+	}
+	.widget-title{
+		color: #999999;
+		display: block;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 15px;
+		padding: 3px 15px;
+		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.506);
+	}
+
+	.sidebar-nav{ 
+		padding: 9px 0px;
+	}
+
+	.bootsearch-widget form{
+		margin: 0 10px 5px 10px;	
+		padding: 0;
+	}
+}
+
+//sidebar
+.search-button{
+	.clear();
+}
+
+
+
+//song
+#lrc pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	line-height: 21px;
+	margin: 0;
+	padding: 0 5px 20px;
+	border: 0;
+	border-top-style: none;
+	background: none;
+	.rounded-corners(0);
+}
+
+.record-list{
+	li{
+		margin: 20px 0 30px;	
+	}
+	
+	.record-list-cover
+	{
+		width: 110px;
+		padding: 0 10px;
+		text-align: center;
+	}
+	.record-description{
+		padding: 3px 0;
+		color: @remark-text-color;
+	}
+
+	.record-content{
+		li{
+			margin: 0;
+			padding: 3px 2px;
+		}
+		.dark{
+			background: #f6f6f6;
+		}
+		.light{
+			background: #fff;
+		}
+		a{
+			color: #556;
+			// display: block;
+			// //margin: -3px -2px;
+			// &:hover
+			// {
+			// 	background: #eee;
+
+			// }
+
+		}
+	}
+}
+
+
+#song-list{
+	.no{
+		width: 30px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.remarks{
+		width: 200px;
+		vertical-align: middle;
+		color: @remark-text-color;
+	}
+
+	.song-title{
+		background-color:@song-title-bk; 
+	}
+
+	.item-artist{
+		min-width: 80px;
+		a{
+			color: @sub-text;
+		}
+	}
+}
+
+#song-info{
+	padding: 0 0 0 15px;
+	.song-thumbnail{
+		margin: 0 0 15px;
+	}
+
+	hr{
+		margin: 10px 0;
+	}
+
+	dt{
+		float: left;
+		margin-right: 5px;
+	}
+}
+
+#artist{
+
+	.song-title{
+		background-color:@song-title-bk;
+		padding: 2px 3px;
+	}
+
+	.artist-list{
+		margin: 0 0 20px;
+		padding: 2px 10px;
+		color:@remark-text-color;
+		a{
+			color: @sub-text;
+		}
+	}
+}
+
+#post-license{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+//Home
+#profile{
+	padding: 5px 0px;
+	margin: 0 15px 0 0;
+
+	.info{
+		padding: 10px 10px 0;
+	}
+	hr{
+		margin: 5px 0;
+	}
+
+	li{
+		color: #666;
+		padding: 2px 0;
+		span{
+			color: #333; 
+		}
+	}
+}
+
+//tabs
+@tab-color:#0088CC;
+.trans-tabs{
+	border-bottom: 2px solid @tab-color;
+	padding-left: 10px;
+	margin-right: 10px;
+	*zoom: 1;
+
+	&:before,
+	&:after,
+	{
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+	&:after{
+		clear: both;
+	}
+	> li {
+		float: left;
+
+		> a{
+			padding-right: 12px;
+			padding-left: 12px;
+			margin-right: 2px;
+			line-height: 18px;
+
+			padding-top: 8px;
+			padding-bottom: 8px;
+			margin-top: 2px;
+			.rounded-corners-top();
+		}
+	}
+	> .active
+	{
+		 > a, > a:hover,> a:focus{
+			color: #ffffff;
+			background-color: @tab-color;
+		}
+	}
+}
+
+//兼容
+img.alignleft{
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+img.aligncenter{
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
