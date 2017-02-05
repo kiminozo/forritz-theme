@@ -23,7 +23,7 @@ function forritz_theme_setup(){
 
 	// Adds RSS feed links to <head> for posts and comments.
 	//add_theme_support( 'automatic-feed-links' );
-	add_theme_support( 'post-thumbnails' ,array('record');                           
+	add_theme_support( 'post-thumbnails' ,array('record'));
 
 	register_nav_menus( array( 'main-menu' => __( 'Main Menu', 'forritz' ),  ) );
 }     
